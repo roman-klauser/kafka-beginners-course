@@ -25,7 +25,7 @@ public class ProducerDemoKeys {
         KafkaProducer<String, String> producer = new KafkaProducer<String, String>(properties);
 
         // 3. create ProducerRecord
-        String key = "id_0123";
+        String key = "id_2";
         ProducerRecord<String, String> record = new ProducerRecord<String, String>("first_topic", key, "hello, kafka with key");
 
         // 4. send date - asynchronous
